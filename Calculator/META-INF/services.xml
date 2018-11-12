@@ -1,0 +1,11 @@
+<service name="Calculator" >
+	<Description>
+		Ce Web Service permet d'effectuer les opérations suivantes entre deux entiers: Division, Addition, soustraction,
+		modulo, multiplication et puissance 
+	</Description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass" locked="false">wkp.Calculator</parameter>
+</service>
